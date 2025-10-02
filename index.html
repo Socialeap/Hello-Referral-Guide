@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello! Unleash Your Earnings</title>
+    <title>Hello! | Professional Growth Guide</title>
     <style>
         /* --- Google Font Import --- */
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Montserrat:wght@700&display=swap');
@@ -15,11 +15,10 @@
             --bg-light-purple: #24243E;
             --text-white: #FFFFFF;
             --text-light-grey: #E0E0E0;
-            --accent-blue: #4F46E5; /* Primary accent from landing */
-            --accent-purple: #AC62E8; /* Secondary accent from landing */
-            --accent-pink: #F87171; /* New vibrant accent */
-            --card-bg-light: rgba(61, 56, 110, 0.7); /* Lighter, more vibrant card bg */
-            --card-bg-dark: rgba(42, 39, 78, 0.6);
+            --accent-blue: #4F46E5;
+            --accent-purple: #AC62E8;
+            --accent-pink: #F87171;
+            --card-bg-light: rgba(61, 56, 110, 0.7);
             --border-light: rgba(255, 255, 255, 0.15);
             --shadow-strong: 0 10px 30px rgba(0, 0, 0, 0.4);
             --shadow-glow: 0 0 25px rgba(172, 98, 232, 0.6);
@@ -30,15 +29,15 @@
             background: linear-gradient(135deg, var(--bg-dark-purple), var(--bg-mid-purple), var(--bg-light-purple));
             color: var(--text-white);
             margin: 0;
-            padding: 0; /* Remove body padding to let header stretch */
+            padding: 0;
             text-align: center;
-            overflow-x: hidden; /* Prevent horizontal scroll from subtle animations */
+            overflow-x: hidden;
         }
 
         .container {
-            max-width: 850px; /* Slightly wider container for more breathing room */
+            max-width: 850px;
             margin: 0 auto;
-            padding: 0 20px 40px 20px; /* Adjust padding for better flow */
+            padding: 0 20px 40px 20px;
         }
         
         /* --- Header Section --- */
@@ -79,39 +78,29 @@
         }
 
         .header-logo {
-            width: 80px; /* Adjust size as needed */
-            height: 80px;
-            margin-bottom: 20px;
-            animation: pulseGlow 3s infinite alternate;
-            box-shadow: 0 0 30px rgba(172, 98, 232, 0.5); /* Stronger glow */
-            border-radius: 50%; /* If logo background is transparent */
+            width: 80px; /* Unstyled logo */
+            height: auto;
+            margin-bottom: 25px;
         }
 
         .header-hero h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 3.5rem;
-            line-height: 1.1;
+            font-size: 3.2rem; /* Slightly smaller for professional tone */
+            line-height: 1.2;
             margin-bottom: 15px;
-            background: linear-gradient(90deg, var(--accent-purple), var(--text-white), var(--accent-pink));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            color: var(--text-white);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
             letter-spacing: -1px;
         }
 
         .header-hero p {
-            font-size: 1.4rem;
+            font-size: 1.25rem;
             color: var(--text-light-grey);
             max-width: 650px;
             margin: 0 auto 30px auto;
             font-weight: 400;
         }
 
-        /* --- Keyframe Animations --- */
-        @keyframes pulseGlow {
-            0% { transform: scale(1); box-shadow: 0 0 15px rgba(172, 98, 232, 0.3); }
-            100% { transform: scale(1.05); box-shadow: 0 0 40px rgba(172, 98, 232, 0.8); }
-        }
         @keyframes floatEffect {
             0% { transform: translate(0, 0); }
             50% { transform: translate(20px, 20px); }
@@ -123,18 +112,15 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 2.5rem;
             margin-top: 60px;
-            margin-bottom: 30px;
-            background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            color: var(--text-white);
         }
         
         h3 {
             font-family: 'Poppins', sans-serif;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 700;
-            color: var(--accent-blue);
+            color: var(--text-white);
             margin-bottom: 15px;
         }
 
@@ -143,29 +129,32 @@
             line-height: 1.7;
             color: var(--text-light-grey);
         }
+        strong {
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
 
         /* --- CTA Button --- */
         .cta-button {
             display: inline-block;
-            font-size: 1.2rem;
-            font-weight: 700;
+            font-size: 1.1rem; /* Adjusted size */
+            font-weight: 600;
             color: var(--text-white);
             text-decoration: none;
-            padding: 18px 45px;
+            padding: 16px 40px; /* Adjusted padding */
             border-radius: 50px;
             background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
             border: none;
             cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: var(--shadow-strong);
             position: relative;
             z-index: 10;
         }
 
         .cta-button:hover {
-            transform: translateY(-5px) scale(1.02);
+            transform: translateY(-4px);
             box-shadow: var(--shadow-strong), var(--shadow-glow);
-            background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue)); /* Subtle gradient shift on hover */
         }
 
         /* --- Section Styling --- */
@@ -177,195 +166,132 @@
             border: 1px solid var(--border-light);
             text-align: left;
             box-shadow: var(--shadow-strong);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease;
         }
         .section-card:hover {
             transform: translateY(-5px);
-            box-shadow: var(--shadow-strong), 0 0 15px rgba(172, 98, 232, 0.4);
         }
         
-        /* --- Genial.ly Embed Wrapper --- */
+        /* --- Genial.ly Collapsible Container --- */
+        .collapsible-genially-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.7s ease-in-out;
+        }
+
         .genially-embed-wrapper {
-            margin-top: 60px;
+            margin-top: 30px;
             border-radius: 20px;
             border: 1px solid var(--border-light);
             overflow: hidden;
             box-shadow: var(--shadow-strong);
-            position: relative;
         }
-        .genially-embed-wrapper::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            border-radius: 20px;
-            background: linear-gradient(45deg, rgba(79, 70, 229, 0.1), rgba(172, 98, 232, 0.1));
-            pointer-events: none;
-            z-index: 1; /* Keep gradient above iframe */
-        }
-
 
         /* --- FAQ Accordion --- */
         .faq-item {
             border-bottom: 1px solid var(--border-light);
-            padding: 25px 0;
+            padding: 25px 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
         }
-
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-        
-        .faq-item:hover {
-            background-color: rgba(255, 255, 255, 0.03);
-            border-radius: 15px; /* Add slight rounding on hover */
-        }
-
+        .faq-item:last-child { border-bottom: none; }
         .faq-question {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             font-weight: 600;
-            color: var(--accent-blue);
+            color: var(--text-light-grey);
             display: flex;
             justify-content: space-between;
             align-items: center;
             transition: color 0.3s ease;
         }
-        
-        .faq-item.active .faq-question, .faq-question:hover {
-            color: var(--accent-purple);
-        }
-
+        .faq-item:hover .faq-question { color: var(--accent-purple); }
         .faq-question::after {
             content: '+';
             font-size: 2rem;
             font-weight: 400;
-            color: var(--text-light-grey);
-            transition: transform 0.3s ease, color 0.3s ease;
+            transition: transform 0.3s ease;
         }
-
-        .faq-item.active .faq-question::after {
-             transform: rotate(45deg);
-             color: var(--accent-pink);
-        }
-
+        .faq-item.active .faq-question::after { transform: rotate(45deg); }
         .faq-answer {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.5s ease-out, padding 0.5s ease-out; /* Smooth collapse/expand */
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
             padding: 0 10px;
         }
-        
-        .faq-item.active .faq-answer {
-            padding-top: 15px; /* Add padding when active */
-        }
-
+        .faq-item.active .faq-answer { padding-top: 15px; }
         .faq-answer p {
-            margin-top: 0; /* Adjust margin for active state */
+            margin-top: 0;
             padding-left: 10px;
             border-left: 2px solid var(--accent-blue);
         }
 
         /* --- Responsive Design --- */
         @media (max-width: 768px) {
-            .header-hero h1 {
-                font-size: 2.5rem;
-            }
-            .header-hero p {
-                font-size: 1.1rem;
-            }
-            h2 {
-                font-size: 2rem;
-            }
-            h3 {
-                font-size: 1.5rem;
-            }
-            .cta-button {
-                font-size: 1rem;
-                padding: 15px 30px;
-            }
-            .section-card {
-                padding: 30px 20px;
-            }
-            .faq-question {
-                font-size: 1.1rem;
-            }
-            .faq-question::after {
-                font-size: 1.8rem;
-            }
-        }
-        @media (max-width: 480px) {
-            .header-hero h1 {
-                font-size: 2rem;
-            }
-            .header-hero p {
-                font-size: 1rem;
-            }
-            h2 {
-                font-size: 1.7rem;
-            }
-            .section-card {
-                padding: 25px 15px;
-            }
+            .header-hero h1 { font-size: 2.5rem; }
+            .header-hero p { font-size: 1.1rem; }
+            h2 { font-size: 2rem; }
+            h3 { font-size: 1.5rem; }
+            .cta-button { font-size: 1rem; padding: 15px 30px; }
+            .section-card { padding: 30px 20px; }
+            .faq-question { font-size: 1.1rem; }
         }
     </style>
 </head>
 <body>
 
     <header class="header-hero">
-        <img src="https://static.wixstatic.com/media/c3283f_3b2b091901824c70b23fd04df9865da7~mv2.png" alt="Hello! App Logo" class="header-logo">
-        <h1>Unleash Your Earning Potential!</h1>
-        <p>Transform your professional network into a powerful income stream. Discover how your Hello! Signature Card can put **real cash in your pocket**.</p>
-        <a href="#interactive-guide" class="cta-button">Claim Your $25 Reward!</a>
+        <img src="https://static.wixstatic.com/media/c3283f_f17a57665e694950b4fced6ca3baba68~mv2.png" alt="Hello! App Logo" class="header-logo">
+        <h1>Elevate Your Professional Impact</h1>
+        <p>Your Hello! Signature Card is more than a digital handshake—it's a tool for growth. Discover how sharing it can amplify your network and reward your influence.</p>
+        <a href="#interactive-guide" id="toggle-guide-btn" class="cta-button">View the Growth Guide</a>
     </header>
 
     <div class="container">
 
         <section id="interactive-guide">
-            <h2>Your Path to Passive Revenue, Visualized!</h2>
-            <p>Ready to turn connections into cash? Our interactive guide breaks down the simple steps to monetize your digital handshake. Let's get started!</p>
-             <div class="genially-embed-wrapper">
-                <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Hello! Referral Guide" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/68dee08a03cc20c0b6e55e5e" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
-             </div>
+            <h2>The Guide to Network Monetization</h2>
+            <p>This guide illustrates how to transform your Signature Card into an active networking asset that also recognizes and rewards you for sharing a valuable tool with your peers.</p>
+            <div id="genially-container" class="collapsible-genially-content">
+                <div class="genially-embed-wrapper">
+                    <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Hello! Referral Guide" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/68dee08a03cc20c0b6e55e5e" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+                </div>
+            </div>
         </section>
 
         <section id="pro-tips">
-            <h2>Supercharge Your Success!</h2>
+            <h2>Strategic Best Practices</h2>
             <div class="section-card">
-                <h3>Unlock Maximum Impact</h3>
-                <p><strong>Aim for Pro Power:</strong> The quickest path to that sweet $25 is by referring users who upgrade to a <strong>Yearly Pro</strong> plan, earning you a massive <strong>5 points per referral</strong>!</p>
-                <p><strong>Be a Storyteller:</strong> Don't just share a link—share the transformation! Talk about how Hello! eliminates "digital dead ends" and elevates professional presence. You're offering a solution, not just an app.</p>
-                <p><strong>Shine on Social:</strong> Participate in our <strong>#HelloCard</strong> contests and flaunt your Signature Card. It's prime visibility for your referral link and a chance to win even more!</p>
+                <h3>Amplify Your Influence</h3>
+                <p><strong>Share the Full Potential:</strong> The fastest path to earning rewards is by referring colleagues who will benefit from a <strong>Yearly Pro</strong> plan. This earns you <strong>5 points</strong> because you're helping them unlock maximum value.</p>
+                <p><strong>Share Your Success Story:</strong> Instead of just sharing a link, explain how Hello! has improved your own networking. A personal endorsement is the most powerful way to introduce others to a tool you believe in.</p>
+                <p><strong>Engage the Community:</strong> Showcase your professional brand in our <strong>#HelloCard</strong> contests. It’s an excellent opportunity for professional visibility and a great way to feature your referral CTA organically.</p>
             </div>
         </section>
 
         <section id="faq">
-            <h2>Burning Questions? We've Got Answers!</h2>
+            <h2>Frequently Asked Questions</h2>
             <div class="section-card">
                 <div class="faq-item">
-                    <div class="faq-question">How do my earnings stack up?</div>
+                    <div class="faq-question">How are referral points calculated?</div>
                     <div class="faq-answer">
-                        <p>You pocket 1 point for every new user registration and a fantastic 5 points when your referred user unlocks the full power of a Yearly Pro subscription!</p>
+                        <p>You receive 1 point for a new user registration and 5 points when a referred user upgrades to a Yearly Pro subscription.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">What's the deal with "Pending" vs. "Available" points?</div>
+                    <div class="faq-question">What is the difference between "Pending" and "Available" points?</div>
                     <div class="faq-answer">
-                        <p>We ensure everyone plays fair! All points take a quick 72-hour journey in "pending" status. Once cleared, they're "available" for you to cash in – no funny business, just verified rewards!</p>
+                        <p>To ensure system integrity, all points enter a 72-hour pending period for verification. After this period, they become "Available" for redemption.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">How do I claim my awesome $25 reward?</div>
+                    <div class="faq-question">How are rewards redeemed?</div>
                     <div class="faq-answer">
-                        <p>Hit that sweet 12 <em>Available</em> points mark, and BAM! The $25 Digital Gift Card option lights up in your "Referrals & Rewards" dashboard. We'll send it straight to you, no waiting, no fuss!</p>
+                        <p>Once you have 12 <em>Available</em> points, the $25 Digital Gift Card option becomes active in your "Referrals & Rewards" dashboard for instant, automated redemption.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Is there a limit to how much I can earn?</div>
+                    <div class="faq-question">Is there a limit on referrals?</div>
                     <div class="faq-answer">
-                        <p>Absolutely NOT! Your earning potential is as boundless as your network. Keep sharing the Hello! love, keep growing your points, and keep racking up those cash rewards!</p>
+                        <p>There is no limit. We encourage you to share Hello! with any professionals in your network who could benefit from a more dynamic and effective networking tool.</p>
                     </div>
                 </div>
             </div>
@@ -374,15 +300,33 @@
     </div>
 
     <script>
-        const faqItems = document.querySelectorAll('.faq-item');
+        // --- Genially Toggler Script ---
+        const toggleBtn = document.getElementById('toggle-guide-btn');
+        const geniallyContainer = document.getElementById('genially-container');
+        
+        toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const isCollapsed = !geniallyContainer.style.maxHeight;
+            if (isCollapsed) {
+                geniallyContainer.style.maxHeight = geniallyContainer.scrollHeight + "px";
+                toggleBtn.textContent = 'Hide the Guide';
+                setTimeout(() => {
+                    const guideSection = document.getElementById('interactive-guide');
+                    guideSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            } else {
+                geniallyContainer.style.maxHeight = null;
+                toggleBtn.textContent = 'View the Growth Guide';
+            }
+        });
 
+        // --- FAQ Accordion Script ---
+        const faqItems = document.querySelectorAll('.faq-item');
         faqItems.forEach(item => {
             const question = item.querySelector('.faq-question');
             question.addEventListener('click', () => {
                 const answer = item.querySelector('.faq-answer');
                 const isActive = item.classList.contains('active');
-                
-                // Close all other active FAQ items (optional, but cleaner UX)
                 document.querySelectorAll('.faq-item.active').forEach(activeItem => {
                     if (activeItem !== item) {
                         activeItem.classList.remove('active');
@@ -390,7 +334,6 @@
                         activeItem.querySelector('.faq-answer').style.paddingTop = null;
                     }
                 });
-
                 if (isActive) {
                     item.classList.remove('active');
                     answer.style.maxHeight = null;
@@ -398,15 +341,9 @@
                 } else {
                     item.classList.add('active');
                     answer.style.maxHeight = answer.scrollHeight + "px";
-                    answer.style.paddingTop = "15px"; // Apply padding when active
+                    answer.style.paddingTop = "15px"; 
                 }
             });
-        });
-        
-        // Smooth scroll for the CTA button
-        document.querySelector('.cta-button').addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector('#interactive-guide').scrollIntoView({ behavior: 'smooth' });
         });
     </script>
 
